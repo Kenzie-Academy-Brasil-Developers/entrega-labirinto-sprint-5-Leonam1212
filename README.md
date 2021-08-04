@@ -7,6 +7,8 @@ Hoje você criará um jogo em JavaScript que exibe um labirinto e permite que o 
 Este JavaScript representa o labirinto descrito acima. Cada "W" representa uma parede, "S" a posição inicial e "F" a linha de chegada. Os espaços são células vazias por onde o jogador pode se movimentar.
 
 ```js
+
+
 const map = [
     "WWWWWWWWWWWWWWWWWWWWW",
     "W   W     W     W W W",
@@ -24,6 +26,7 @@ const map = [
     "W       W       W   W",
     "WWWWWWWWWWWWWWWWWWWWW",
 ];
+
 ```
 
 ## Orientação

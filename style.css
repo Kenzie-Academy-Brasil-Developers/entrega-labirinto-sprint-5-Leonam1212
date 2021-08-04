@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#labirinto {
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    width:1050px;
+    /* border:1px solid black; */
+    /* height:750px; */
+}
+.parede {
+    
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(15, 2, 129)
+}
+
+.chao {
+    
+    margin:0;
+    width: 50px;
+    height: 50px;
+    background-color:bisque ;
+}
+.jogador {
+    
+    margin:0;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(3, 3, 3) ;
+}
+.final {
+    
+    margin:0;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(20, 241, 0) ;
+}
+.divLinha {
+     display:flex;
+}
