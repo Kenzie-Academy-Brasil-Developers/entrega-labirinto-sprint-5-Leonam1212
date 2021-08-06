@@ -4,8 +4,28 @@
     box-sizing: border-box;
 }
 body {
-    background: rgba(22, 75, 105, 0.986);
+    background: rgb(25, 14, 58);
+   
+    
 }
+
+
+body:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+   
+  
+    display: block;
+    background-image: url(https://i.pinimg.com/originals/4d/bb/ea/4dbbea51049fe42476e0b2e6ba8ec6c1.jpg);
+    background-position:cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(10px);
+  }
+
 #labirinto {
     position: absolute;
     top:50%;
@@ -14,15 +34,14 @@ body {
     display:flex;
     flex-wrap: wrap;
     width:1050px;
-    /* border:1px solid black; */
-    /* height:750px; */
+
 }
 .parede {
     
     
     width: 50px;
     height: 50px;
-    background-color: rgb(15, 2, 129)
+    background-color: rgb(30, 8, 43)
 }
 
 .chao {
@@ -31,7 +50,7 @@ body {
     justify-content:center;
     width: 50px;
     height: 50px;
-    background-color:bisque ;
+    background-color:rgb(108, 118, 173) ;
 }
 .inicio {
     display:flex;
@@ -39,19 +58,72 @@ body {
     justify-content:center;
     width: 50px;
     height: 50px;
-    background-color:rgb(221, 173, 40) ;
+    background-color:rgb(221, 76, 40) ;
    
 }
 .jogador {
-    width: 45px;
-    height:45px;
-    background-color:rgb(3, 3, 3) ;
+    animation-duration: 100ms;
+    background-image: url(./img/3f14716d949ad3a04faab591350373fb.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height:190px;
+    
 }
+
 .final {
+    display:flex;
+    align-items:center;
+    justify-content:center;
     width: 50px;
     height: 50px;
-    background-color:rgb(20, 241, 0) ;
+    background-color:rgba(225, 228, 52, 0.973) ;
 }
 .divLinha {
      display:flex;
+}
+
+#vitoria {
+
+    background: rgba(255, 255, 5, 0.856);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    width: 100vw;
+    height: 400px;
+    animation:animate;
+    animation-duration: 1800ms;
+    display:none;
+  
+}
+#mensagem {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(61, 60, 60);
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+
+@keyframes jogador {
+    from {margin-bottom: -15px;}
+    to {margin-bottom: 0;}
+    }
+    
+    
+.jogador {animation-name: jogador;}
+
+@keyframes animate {
+from{opacity: 1;}
+from{opacity: 0;}
 }
